@@ -1,0 +1,43 @@
+<html>
+   
+    <head>
+        <script>
+            function sumOfMultiples(a, b, n) {
+                let totalSum = 0;
+                for (let i = 0; i < n; i++) {
+                    if (i % a === 0 || i % b === 0) {
+                        totalSum += i;
+                    }
+                }
+                return totalSum;
+            }
+    
+            document.getElementById('inputForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                const a = parseInt(document.getElementById('a').value);
+                const b = parseInt(document.getElementById('b').value);
+                const n = parseInt(document.getElementById('n').value);
+    
+                const result = sumOfMultiples(a, b, n);
+                document.getElementById('result').innerText = `The sum of multiples of ${a} and ${b} below ${n} is: ${result}`;
+            });
+        </script>
+    </head>
+
+    <body>
+        <form id="inputForm">
+            <label for="a">Enter value for a:</label>
+            <input type="number" id="a" required><br><br>
+    
+            <label for="b">Enter value for b:</label>
+            <input type="number" id="b" required><br><br>
+    
+            <label for="n">Enter value for n:</label>
+            <input type="number" id="n" required><br><br>
+    
+            <button type="submit">Calculate Sum</button>
+        </form>
+       
+    </body>
+</html>
