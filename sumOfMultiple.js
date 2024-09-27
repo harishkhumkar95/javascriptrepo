@@ -8,6 +8,8 @@
                     sum +=i;
                 }
             }
-            return sum;
-          }
-          alert(result);
+            console.log(sum);
+            alert('number is'+sum)
+            console.log(sum);
+          
+         
