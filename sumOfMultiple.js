@@ -10,4 +10,4 @@
             }
             return sum;
           }
-          console.log(result);
+          alert(result);
