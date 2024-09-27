@@ -15,4 +15,4 @@ let b = 5;
 let n = 1000;
 
 let result = sumOfMultiples(a, b, n);
-console.log(result);  // Output: 233168
+alert('sum='+result);  // Output: 233168
