@@ -12,7 +12,5 @@ function sumOfMultiples(a, b, n) {
     return totalSum;
 }
 
-
-
 let result = sumOfMultiples(a, b, n);
-alert('sum='+result);  // Output: 233168
+alert('sum='+result);  
