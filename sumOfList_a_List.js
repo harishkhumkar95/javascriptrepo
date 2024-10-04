@@ -13,8 +13,10 @@
     
      function calsum(){
          let sum = 0;
+         
     alert('working');
     for (let i = 0; i < l.length; i++) {
+        let num =l[i];
         for (let j = 0; j < a.length; j++) {
             if (num % a[j] === 0) {
                 sum += num; 
