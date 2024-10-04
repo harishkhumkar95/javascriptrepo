@@ -21,10 +21,12 @@ function calSumOfMul() {
             }
         }
     }
-  
+    
+
     console.log(`Sum of multiples: ${sum}`);
     alert('sum of multiple:${sum}')
-    window.onload.calSumOfMul;
+    
 }
+window.onload.calSumOfMul;
 
 
