@@ -27,6 +27,6 @@ function calSumOfMul() {
     alert('sum of multiple:'+ sum)
     
 }
-window.onload=calSumOfMul;
+
 
 
