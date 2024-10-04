@@ -16,5 +16,5 @@ function sumOfMultiples(listOfInteger1, listOfInteger2) {
 
 const listOfInteger1 = [2, 3,6,8,5]; 
 const listOfInteger2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
-const result = sumOfMultiples(a, l);
+const result = sumOfMultiples(listOfInteger1, listOfInteger2);
 console.log(`The sum of all multiples of elements in a found in l is: ${result}`);
