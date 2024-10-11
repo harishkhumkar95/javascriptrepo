@@ -1,22 +1,23 @@
-function sumOfMultiples(listOfInteger1, listOfInteger2) {
-    let sum = 0;
 
-    for (let num of listOfInteger2) {
-        for (let multiple of listOfInteger1) {
-            if (num % multiple === 0) {
-                sum += num;
-                break; // No need to check other multiples for this num
-            }
+const a = [2, 3,6,7,8]; 
+const l = [1, 2, 3, 4, 5, 6, 7, 8, 9]; 
+
+ function calsum(){
+     let sum = 0;
+     
+alert('working');
+for (let i = 0; i < l.length; i++) {
+    let num =l[i];
+    for (let j = 0; j < a.length; j++) {
+        if (num % a[j] === 0) {
+            sum += num; 
+            break; 
         }
     }
-
-    return sum;
 }
 
 
-const listOfInteger1 = [2, 3,6,8,5]; 
-const listOfInteger2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
-const result = sumOfMultiples(listOfInteger1, listOfInteger2);
-alert('sum=='+result);
-console.log(`The sum of all multiples: ${result}`);
-
+console.log(`Sum of multiples: ${sum}`);
+alert('sum of multiple:'+ sum)
+ }
+window.onload=calsum;
